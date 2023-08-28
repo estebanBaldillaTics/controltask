@@ -12,6 +12,19 @@
     cursor: pointer;
 }
 
+.task-container:nth-child(3n + 1){
+    background-color: #1b1b32;
+}
+
+
+.task-container:nth-child(3n + 2){
+    background-color: #2a2a40;
+}
+
+.task-container:nth-child(3n + 3){
+    background-color: #3b3b4f;
+}
+
 .task-text{
     width: 100%;
     height: 100%;
@@ -21,10 +34,22 @@
     overflow-wrap: anywhere;
 }
 
-.task-icon{
+.task-icon-container{
     display: contents;
     width: 75px;
     height: 75px;
     margin: 5px;
     align-items: center;
+}
+
+.complete{
+    background-color: #5a01a7 !important;
+    text-decoration: line-through;
+}
+
+.task-icon{
+    display: inline-table;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
 }
